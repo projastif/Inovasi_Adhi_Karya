@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/count','App\Http\Controllers\CountController@hitung');
+
+Route::get('/result','App\Http\Controllers\CountController@hitung');
