@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <input type="number" name="elevasi1" class="form-control" placeholder="Masukkan Elevasi Pertama" required>
+                        <input type="number" step="any" name="elevasi1" class="form-control" placeholder="Masukkan Elevasi Pertama" required>
                     </div>
 
                     <div class="col-md-3"></div>
@@ -63,25 +63,11 @@
                     </div>
 
                     <div class="col-md-3">
-                        <input type="number" name="elevasi2" class="form-control" placeholder="Masukkan Elevasi Kedua" required>
+                        <input type="number" step="any" name="elevasi2" class="form-control" placeholder="Masukkan Elevasi Kedua" required>
                     </div>
 
                     <div class="col-md-3"></div>
                 </div>
-
-                <!--div class="row">
-                    <div class="col-md-3"></div>
-
-                    <div class="col-md-3">
-                        <p>Beda Tinggi</p>
-                    </div>
-
-                    <div class="col-md-3">
-                        <input type="number" name="beda_tinggi" class="form-control" disabled>
-                    </div>
-
-                    <div class="col-md-3"></div>
-                </div-->
 
                 <div class="row">
                     <div class="col-md-3"></div>
@@ -91,81 +77,11 @@
                     </div>
 
                     <div class="col-md-3">
-                        <input type="number" name="jarak" class="form-control" placeholder="Masukkan Jarak" required>
+                        <input type="number" step="any" name="jarak" class="form-control" placeholder="Masukkan Jarak" required>
                     </div>
 
                     <div class="col-md-3"></div>
                 </div>
-
-                <!--div class="row">
-                    <div class="col-md-3"></div>
-
-                    <div class="col-md-3">
-                        <p>i (%)</p>
-                    </div>
-
-                    <div class="col-md-3">
-                        <input type="number" name="invt">
-                    </div>
-
-                    <div class="col-md-3"></div>
-                </div-->
-
-                <!--div class="row">
-                    <div class="col-md-3"></div>
-
-                    <div class="col-md-3">
-                        <p>Δ sin α</p>
-                    </div>
-
-                    <div class="col-md-3">
-                        <input type="number" name="sin">
-                    </div>
-
-                    <div class="col-md-3"></div>
-                </div-->
-
-                <!--div class="row">
-                    <div class="col-md-3"></div>
-
-                    <div class="col-md-3">
-                        <p>D°</p>
-                    </div>
-
-                    <div class="col-md-3">
-                        <input type="number" name="derajat">
-                    </div>
-
-                    <div class="col-md-3"></div>
-                </div-->
-
-                <!--div class="row">
-                    <div class="col-md-3"></div>
-
-                    <div class="col-md-3">
-                        <p>M'</p>
-                    </div>
-
-                    <div class="col-md-3">
-                        <input type="number" name="meter">
-                    </div>
-
-                    <div class="col-md-3"></div>
-                </div-->
-
-                <!--div class="row">
-                    <div class="col-md-3"></div>
-
-                    <div class="col-md-3">
-                        <p>S"</p>
-                    </div>
-
-                    <div class="col-md-3">
-                        <input type="number" name="second">
-                    </div>
-
-                    <div class="col-md-3"></div>
-                </div-->
 
                 <div class="row">
                     <div class="col-md-3"></div>

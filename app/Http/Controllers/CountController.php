@@ -17,10 +17,16 @@ class CountController extends Controller
 
         $bedatinggi = $elevasipertama-$elevasikedua;
         $i = $bedatinggi / $jarak;
-        $sin = asin($i);
-        $derajat = 360 / $sin;
-        $meter = $sin * 60 / 60;
-        $second = $sin * 3600 / 60;
+        $degree = asin($i);
+        $sin = rad2deg(sin($i));
+        $d1 = $sin / 360;
+        $d2 = $d1 % 2;
+        $derajat = floor($d2);
+        $m1 = ($sin * 60) / 60;
+        $m2 = $m1 % 2;
+        $meter = round($m2);
+        $s1 = $sin * 3600 / 60;
+        $second = $s1 % 2;
         $decimal = 90 / $sin;
 
         //return redirect('/')->with('info','Hasil Dari '.$lokasipertama.' - '.$lokasikedua.' adalah : '.$hasil);
