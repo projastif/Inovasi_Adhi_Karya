@@ -246,9 +246,9 @@
                 </div>    
             </form>
         </div>
-    </div>
+    </div-->
 
-    <div style="margin-top: 30px;">
+    <!--div style="margin-top: 30px;">
         <div class="container" style="background-color: #ffeaa7; padding: 20px; border-radius: 20px;">
             <h2>MONITORING</h2>
             <form action="/count" method="POST">
