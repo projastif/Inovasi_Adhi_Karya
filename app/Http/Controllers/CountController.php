@@ -19,7 +19,7 @@ class CountController extends Controller
             $heightdiff = $firstelev - $secondelev;
             $ipercent = round(($heightdiff / $distance),6);
             //$deltasin = round((rad2deg(sin($ipercent))+0.00002),5);
-            $deltasin = round(rad2deg(sin($ipercent)),5);
+            $deltasin = round((rad2deg(sin($ipercent))+0.00002),5);
             $degree = round($deltasin % 360);
             $meterrun = round(($deltasin * 60) % 60);
             $timesec = ($deltasin * 3600) % 60;
@@ -49,6 +49,17 @@ class CountController extends Controller
             $devheightdiff = round(($heightdiff2 - $tooldrop),5);
             $actualamount = $devheightdiff + $monitor;
 
-        return redirect('/')->with('info','Lokasi Pertama : ' .$firstloc.', Elevasi Pertama : ' .$firstelev. ', Lokasi Kedua : ' .$secondloc. ', Elevasi Kedua : ' .$secondelev. ', Beda Tinggi : ' .$heightdiff. ', Jarak : ' .$distance. ', i(%) : ' .$ipercent. ', Δ sin α : ' .$deltasin. ', D° : ' .$degree. ', M : ' .$meterrun. ', S : ' .$timesec. ', Decimal : ' .$decimal. ', D° : ' .$degree2. ', M : ' .$meterrun2. ', S : ' .$timesec2. ', Derajat : ' .$derajat. ', M : ' .$meter. ', S : ' .$second. ', Desimal : '.$decimal2. ', Jarak : ' .$distance2. ', Sudut : ' .$sudut. ', Sin : ' .$sinus. ', Beda Tinggi : ' .$heightdiff2. ', Penurunan Alat T0 : ' .$tooldrop. ', Beda Tinggi + Deviasi : '  .$devheightdiff. ', Jarak Center Monitor : ' .$monitor. ', Total Beda Tinggi Aktual : ' .$actualamount);
+
+        //C. MONITORING//
+        $long2 = $pipa * 2.43 + $long;
+        $actualheightdiff = $actualamount;
+        $designheightdiff = $heightdiff;
+        $deviation = round(($designheightdiff - $actualheightdiff),2);
+        $finaldesheightdiff = $heightdiff;
+        $devdesignheightdiff = round(($finaldesheightdiff - $actualheightdiff),2);
+        $pipa2 = $pipa + 1;
+
+
+        return redirect('/')->with('info','Lokasi Pertama : ' .$firstloc.', Elevasi Pertama : ' .$firstelev. ', Lokasi Kedua : ' .$secondloc. ', Elevasi Kedua : ' .$secondelev. ', Beda Tinggi : ' .$heightdiff. ', Jarak : ' .$distance. ', i(%) : ' .$ipercent. ', Δ sin α : ' .$deltasin. ', D° : ' .$degree. ', M : ' .$meterrun. ', S : ' .$timesec. ', Decimal : ' .$decimal. ', D° : ' .$degree2. ', M : ' .$meterrun2. ', S : ' .$timesec2. ', Derajat : ' .$derajat. ', M : ' .$meter. ', S : ' .$second. ', Desimal : '.$decimal2. ', Jarak : ' .$distance2. ', Sudut : ' .$sudut. ', Sin : ' .$sinus. ', Beda Tinggi : ' .$heightdiff2. ', Penurunan Alat T0 : ' .$tooldrop. ', Beda Tinggi + Deviasi : '  .$devheightdiff. ', Jarak Center Monitor : ' .$monitor. ', Total Beda Tinggi Aktual : ' .$actualamount. ', Pipa-n : ' .$pipa. ' , Panjang (@2,43) : ' .$long2. ' , Beda Tinggi Aktual : ' .$actualheightdiff. ' , Beda Tinggi Desain : ' .$designheightdiff. ' , Deviasi : ' .$deviation. ' , Beda Tinggi Desain Akhir (@' .$pipa2.' Pipa ) : ' .$finaldesheightdiff. ' , Deviasi Desain Akhir (@' .$pipa2. ' Pipa) : ' .$devdesignheightdiff);
     }    
 }
