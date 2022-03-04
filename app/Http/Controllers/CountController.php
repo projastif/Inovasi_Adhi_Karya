@@ -36,8 +36,9 @@ class CountController extends Controller
 
         //Sudut Perhitungan//
         $heightdiff = $firstelev - $secondelev;
-        $ipercent = round(($heightdiff / $distance),6);
-        $deltasin = round((rad2deg(sin($ipercent))+0.00002),5);
+        $ipercent = round(($heightdiff / $distance),7);
+        //$deltasin = round((rad2deg(sin($ipercent))+0.00002),5);
+        $deltasin = round(rad2deg(sin($ipercent)),5);
         $degree = round($deltasin % 360);
         $meterrun = round(($deltasin * 60) % 60);
         $timesec = ($deltasin * 3600) % 60;
