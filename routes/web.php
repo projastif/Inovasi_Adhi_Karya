@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 Route::post('/count','App\Http\Controllers\CountController@hitung');
 
-Route::get('/result','App\Http\Controllers\CountController@hitung');
+Route::post('/count2','App\Http\Controllers\CountController@hitung2');
