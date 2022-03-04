@@ -85,6 +85,104 @@
 
                 <div class="row">
                     <div class="col-md-3"></div>
+
+                    <div class="col-md-3">
+                        <p>D°</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="number" step="any" name="derajat" class="form-control" placeholder="Masukkan Nilai Derajat" required>
+                    </div>
+
+                    <div class="col-md-3"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-3">
+                        <p>M'</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="number" step="any" name="meter" class="form-control" placeholder="Masukkan Nilai Meter" required>
+                    </div>
+
+                    <div class="col-md-3"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-3">
+                        <p>S"</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="number" step="any" name="second" class="form-control" placeholder="Masukkan Nilai Waktu" required>
+                    </div>
+
+                    <div class="col-md-3"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-3">
+                        <p>Pipa</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="number" step="any" name="pipa" class="form-control" placeholder="Masukkan Jumlah Pipa" >
+                    </div>
+
+                    <div class="col-md-3"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-3">
+                        <p>Panjang Mesin</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="number" step="any" name="panjangmesin" class="form-control" placeholder="Masukkan Panjang Mesin" required>
+                    </div>
+
+                    <div class="col-md-3"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-3">
+                        <p>Penurunan Alat T0</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="number" step="any" name="alat" class="form-control" placeholder="Masukkan Nilai" required>
+                    </div>
+
+                    <div class="col-md-3"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-3">
+                        <p>Jarak Center Monitor</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="number" step="any" name="jarakmonitor" class="form-control" placeholder="Masukkan Nilai" required>
+                    </div>
+
+                    <div class="col-md-3"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3"></div>
                     <div class="col-md-6">
                         <button type="submit" class="btn btn-submit" style="background-color: #fdcb6e;">Count</button>
                     </div>
